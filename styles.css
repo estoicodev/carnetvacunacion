@@ -351,7 +351,7 @@ nav ul li a:hover {
   height: 100%;
   z-index: 20;
   text-align: center;
-  display: none;
+  display: block;
   overflow: auto;
 }
 .popup-general {
@@ -960,4 +960,8 @@ nav ul li a:hover {
   .a-scroll::-webkit-scrollbar-thumb:hover {
     background: #797979;
   }
+}
+
+.hidden {
+  display: none;
 }

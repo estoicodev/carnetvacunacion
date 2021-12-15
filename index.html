@@ -74,8 +74,9 @@
                   <button
                     type="button"
                     class="btn btn1 btnEff jOptVacuna"
+                    id="btnQr"
                     style="border-radius: 0.4rem; margin: 0.3rem 0"
-                  >
+                    >
                     <img
                       src="https://carnetvacunacion.minsa.gob.pe/static/img/icon/eye-regular.png"
                       alt=""
@@ -179,5 +180,33 @@
       </nav>
       <button type="button" class="btn btn1 aBtnClose">Salir</button>
     </div>
+    <!-- Popup -->
+    <div class="popup-container hidden" id="poup-container" style="padding: 0.6rem 0.6rem 0px; z-index: 22;">
+      <div class="popup-general width-4">
+        <div class="popup-title"><span class="popup-txttitle">Detalle de vacuna</span><span class="popup-close" id="popup-close">X</span></div>
+        <div class="popup-body">
+          <div class="aList" style="border: #fdb441 solid 1px;">
+            <div style="display: flex">
+              <img src="https://carnetvacunacion.minsa.gob.pe/static/img/icon/frasco.png" alt="" width="10" height="30">
+              <div style="align-self:flex-start; padding-left:0.5rem; padding-top:0.25rem"><b style="color:rgb(0, 160, 153); font-size:1.1rem">Vacuna contra Covid</b></div>
+            </div>
+          </div>
+          <div class="text-center" style="padding-top:0.3rem">
+            <a href="https://carnetvacunacion.minsa.gob.pe/#publico/certificado/certificado?Tk=v2-4834e3198da95535cd2818543ad8f134:33b8263b5771d8bfd7ffbfc561105aea2c9f77670c78c9a1a2e5f8f32426ea31">
+              <button class="btn btn1" type="button" style="font-size: 0.75rem;">
+                <img src="https://carnetvacunacion.minsa.gob.pe/static/img/icon/eye-regular.png" alt="" style="vertical-align: middle"> VER CERTIFICADO </img>
+              </button>
+            </a>
+          </div>
+          <div class="text-center" style="padding: 0.8rem 0.2rem;">
+            <div class="text-center" style="padding:0 0 0.2rem; font-size: 1rem"><b>Escanear para ver el certificado</b></div>
+            <div style="overflow: auto">
+              <img width="250" height="250" src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fcarnetvacunacion.netlify.app%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='qr code'><a href='https://www.qr-code-generator.com' border='0' style='cursor:default'  rel='nofollow'></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
